@@ -208,7 +208,7 @@ nav {
         display: none;
     }
     header {
-        margin-top: 0;
+        margin-top: 0 !important;
     }
 }
 
