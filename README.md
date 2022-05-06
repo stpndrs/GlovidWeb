@@ -6,4 +6,4 @@
 <p>Data Pemeriksaan Vaksinasi : https://data.covid19.go.id/public/api/pemeriksaan-vaksinasi.json</p>
 <p>Data Rumah Sakit Rujukan : https://data.covid19.go.id/public/api/rs.json</p>
 <p>Hoax Booster : https://covid19.go.id/feed/hoax-buster (XML)</p>
-<p>Tanya Jawab : https://covid19.go.id/feed/tanya-jawab< (XML)/p>
+<p>Tanya Jawab : https://covid19.go.id/feed/tanya-jawab (XML)</p>
