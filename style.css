@@ -207,6 +207,9 @@ nav {
     #berita-lainnya {
         display: none;
     }
+    header {
+        margin-top: 0 !important;
+    }
 }
 
 @media (max-width: 400px) {
@@ -392,6 +395,7 @@ footer h5 {
 footer p {
     margin: 0;
 }
+<<<<<<< HEAD
 
 
 
@@ -453,3 +457,5 @@ footer p {
     left: 35%;
     color: white;
 }
+=======
+>>>>>>> 95dbc0c9b3cf7e6c5c206af6509d4249a2b98a90
