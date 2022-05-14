@@ -87,7 +87,7 @@
     <div class="translate-box">
         <div class="translator">
             <span class="" onclick="setDarkMode()" id="darkBtn">
-                <i class="bi bi-moon" ></i>
+                <i class="bi bi-moon"></i>
             </span>
         </div>
         <!-- <span class="btn" onclick="setDarkMode()" id="darkBtn">
@@ -146,199 +146,91 @@
     <div class="container" id="container">
 
         <section>
-
-            <!-- Swiper JS -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </section>
-
-        <section>
-
-            <!-- Berita Terkini Start -->
-
             <div class="row">
-                <div class="col-lg">
-                    <h3 class="font-bold">Berita Terkini <br> Yang Harus Kamu Baca</h3>
+                <div class="col-lg mb-3">
+                    <div class="row" id="data-global">
+                        <div class="col-sm" id="cases">
+                            <p>Cases</p>
+                            <p><small>+14</small></p>
+                            <p>178.919</p>
+                        </div>
+                        <div class="col-sm" id="deaths">
+                            <p>Deaths</p>
+                            <p><small>+0</small></p>
+                            <p>7.684</p>
+                        </div>
+                        <div class="col-sm" id="recovered">
+                            <p>Recovered</p>
+                            <p><small>+8</small></p>
+                            <p>161.924</p>
+                        </div>
+                        <div class="col-sm" id="active">
+                            <p>Active</p>
+                            <br>
+                            <p>9.311</p>
+                        </div>
+                        <p id="vacc"><small><i data-feather="check-circle"></i> <b>6.021.468</b> people who
+                                vaccinated</small></p>
+
+                        <div class="chart-title mt-3">
+                            <h5><i data-feather="bar-chart-2"></i>Global Covid-19 vaccination developments</h5>
+                            <p>Last Update: 2022-04-17</p>
+                        </div>
+                        <canvas id="global-vaccination" width="100%" height="50"></canvas>
+                    </div>
                 </div>
-                <div class="col-lg d-flex justify-content-end align-middle">
-                    <a href="berita.html" class="btn align-middle">Lihat Berita Lainnya</a>
+                <div class="col-lg mb-3">
+                    <h3 id="globalimg"><img src="src/img/world.svg" alt=""><span>Global</span></h3>
+                    <div class="chart-title">
+                        <h5><i data-feather="bar-chart-2"></i>Progress of Global Covid-19 Confirmed Cases</h5>
+                        <p>Last Update: 2022-04-17</p>
+                    </div>
+                    <canvas id="globalcov" width="100%" height="50"></canvas>
                 </div>
             </div>
-
-            <div class="row mt-3">
-                <div class="col-lg">
-                    <div class="card">
-                        <div class="img"></div>
-                        <div class="container my-3">
-                            <p class="date text-sm">24 April 2022</p>
-                            <h4 class="title font-bold">Lorem ipsum dolor sit amet.</h4>
-                            <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa id
-                                distinctio
-                                vitae! Suscipit inventore molestiae earum qui aliquam ex! Ex, ab laborum. Rem
-                                temporibus, minima
-                                quae provident eaque blanditiis? Velit.</p>
-                            <br>
-                            <br>
-                            <a href="#" class="btn ">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg">
-                    <div class="card">
-                        <div class="img"></div>
-                        <div class="container my-3">
-                            <p class="date text-sm">24 April 2022</p>
-                            <h4 class="title font-bold">Lorem ipsum dolor sit amet.</h4>
-                            <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa id
-                                distinctio
-                                vitae! Suscipit inventore molestiae earum qui aliquam ex! Ex, ab laborum. Rem
-                                temporibus, minima
-                                quae provident eaque blanditiis? Velit.</p>
-                            <br>
-                            <br>
-                            <a href="#" class="btn ">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg">
-                    <div class="card">
-                        <div class="img"></div>
-                        <div class="container my-3">
-                            <p class="date text-sm">24 April 2022</p>
-                            <h4 class="title font-bold">Lorem ipsum dolor sit amet.</h4>
-                            <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa id
-                                distinctio
-                                vitae! Suscipit inventore molestiae earum qui aliquam ex! Ex, ab laborum. Rem
-                                temporibus, minima
-                                quae provident eaque blanditiis? Velit.</p>
-                            <br>
-                            <br>
-                            <a href="#" class="btn ">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Berita Terkini END -->
-
         </section>
 
-        <section>
-
+        <section class="mt-5">
             <div class="row">
-                <h3 class="font-bold">Data Sebaran</h3>
-                <p class="date">Update Terakhir: 24-04-2022</p>
-            </div>
+                <div class="col-lg mb-3">
+                    <div class="row" id="data-global">
+                        <div class="input-group search mb-3">
+                            <input type="text" class="form-control" placeholder="Search Country....">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                                    data-feather="search"></i></button>
+                        </div>
+                        <div class="col-sm" id="cases">
+                            <p>Cases</p>
+                            <p><small>+14</small></p>
+                            <p>178.919</p>
+                        </div>
+                        <div class="col-sm" id="deaths">
+                            <p>Deaths</p>
+                            <p><small>+0</small></p>
+                            <p>7.684</p>
+                        </div>
+                        <div class="col-sm" id="recovered">
+                            <p>Recovered</p>
+                            <p><small>+8</small></p>
+                            <p>161.924</p>
+                        </div>
+                        <div class="col-sm" id="active">
+                            <p>Active</p>
+                            <br>
+                            <p>9.311</p>
+                        </div>
+                        <p id="vacc"><small><i data-feather="check-circle"></i> <b>6.021.468</b> people who
+                                vaccinated</small></p>
 
-            <div class="global">
-                <h4><i data-feather="globe"></i>Global</h4>
-                <div class="row text-center
-                ">
-                    <div class="col-lg">
-                        <div class="card">
-                            <h4 class="font-bold">230</h4>
-                            <p>Negara</p>
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="card">
-                            <h4 class="font-bold">505.817.953</h4>
-                            <p>Terkonfirmasi</p>
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="card">
-                            <h4 class="font-bold">6.213.876</h4>
-                            <p>Meninggal Dunia</p>
-                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="indonesia my-5">
-                <h4><i data-feather="globe"></i>Indonesia</h4>
-                <div class="row text-center
-                ">
-                    <div class="col-lg">
-                        <div class="card">
-                            <h4 class="font-bold">6.043.768</h4>
-                            <p>Positif</p>
-                        </div>
+                <div class="col-lg mb-3">
+                    <h3 id="globalimg"><img src="src/img/af.png" alt=""><span>Afganistan</span></h3>
+                    <div class="chart-title">
+                        <h5><i data-feather="bar-chart-2"></i>Progress of <b>Afganistan's</b> Covid-19 Confirmed Cases</h5>
+                        <p>Last Update: 2022-04-17</p>
                     </div>
-                    <div class="col-lg">
-                        <div class="card">
-                            <h4 class="font-bold">5.868.251</h4>
-                            <p>Sembuh</p>
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="card">
-                            <h4 class="font-bold">156.067</h4>
-                            <p>Meninggal Dunia</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section>
-            <div class="row
-                ">
-                <div class="col-lg mb-5">
-                    <h3 class="font-bold">Tanya Jawab</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, iusto?</p>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, iusto?</p>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, iusto?</p>
-                    <hr>
-                    <h5><a href="#" class="font-bold">Baca pertanyaan dan jawaban lainnya disini <i
-                                data-feather="arrow-right"></i></a></h5>
-                </div>
-                <div class="col-lg">
-                    <h3 class="font-bold">Hoax Booster</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, iusto?</p>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, iusto?</p>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, iusto?</p>
-                    <hr>
-                    <h5><a href="#" class="font-bold">Pelajari selengkapnya disini <i
-                                data-feather="arrow-right"></i></a></h5>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="glovid-app">
-                <div class="row">
-                    <div class="col-lg">
-                        <img src="/src/img/glovid-app-thumb.svg" alt="Glovid App">
-                    </div>
-                    <div class="col-lg">
-                        <h3>Lihat data terbaru <br> Covid-19</h3>
-                        <p>Glovid, adalah aplikasi yang dibuat dalam <br> rangka tugas sekolah untuk menampilkan data
-                            <br>perkembangan Coronavirus Disease (Covid-19) <br>terbaru di Indonesia.
-                        </p>
-                        <a href="glovid.apk" download>Download aplikasi Glovid disini <i
-                                data-feather="download"></i></a>
-                    </div>
+                    <canvas id="countrycov" width="100%" height="50"></canvas>
                 </div>
             </div>
         </section>
@@ -353,7 +245,7 @@
         </svg>
         <div class="content">
             <div class="row container">
-                <div class="col-lg mb-5">
+                <div class="col-lg mb-3 mb-5">
                     <img src="/src/img/glovid-nav-white.svg" alt="Glovid">
                 </div>
                 <div class="col-lg mb-5">
@@ -404,6 +296,119 @@
 
     <script>
         feather.replace()
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script>
+        const glovac = document.getElementById('global-vaccination').getContext('2d');
+        const global = new Chart(glovac, {
+            type: 'line',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        const glocov = document.getElementById('globalcov').getContext('2d');
+        const globalcov = new Chart(glocov, {
+            type: 'line',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        const coun = document.getElementById('countrycov').getContext('2d');
+        const countrycov = new Chart(coun, {
+            type: 'line',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
     </script>
 
 </body>

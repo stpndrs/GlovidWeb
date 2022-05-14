@@ -359,6 +359,9 @@ nav {
 .chart-sebaran {
     margin-top: 20px;
 }
+.chart-title {
+    text-align: left;
+}
 .chart-title p {
     color: #FFC727;
     font-size: small;
@@ -388,4 +391,65 @@ footer h5 {
 
 footer p {
     margin: 0;
+}
+
+
+
+
+
+#data-global, #cases, #deaths, #recovered, #active {
+    text-align: center;
+}
+#data-global small {
+    opacity: 50%;
+}
+#cases {
+    padding: 5px;
+    border-radius: 5px;
+    color: red;
+}
+#cases:hover {
+    background-color: #ff000046;
+}
+#deaths {
+    padding: 5px;
+    border-radius: 5px;
+    color: #828282;
+}
+#deaths:hover {
+    background-color: #82828246;
+}
+#recovered {
+    padding: 5px;
+    border-radius: 5px;
+    color: #2AA846;
+}
+#recovered:hover {
+    background-color: #2AA84646;
+}
+#active {
+    padding: 5px;
+    border-radius: 5px;
+    color: #007BFF;
+}
+#active:hover {
+    background-color: #007BFF46;
+}
+
+#data-global #vacc {
+    color: #2AA846;
+}
+
+#globalimg {
+    position: relative;
+}
+#globalimg span {
+    background-color: #bf00007a;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 30%;
+    bottom: auto;
+    left: 35%;
+    color: white;
 }
